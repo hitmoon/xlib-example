@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
                 break;
 
             case ButtonPress:
-                printf ("We got a mouse click at (%d,%d)\n", event.xbutton.x, event.xbutton.y);
+                printf ("We got a mouse click at (%d,%d), button = %u\n", event.xbutton.x, event.xbutton.y, event.xbutton.button);
                 break;
 
             case ConfigureNotify:
